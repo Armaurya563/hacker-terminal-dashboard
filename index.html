@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GLOBAL CYBER-WARFARE COMMAND | RADAR ACTIVE</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <h2 style="margin:0">GLOBAL CYBER-STRRIKE INTERFACE</h2>
+                <small>NODE: ZX-99 // PROTOCOL: OMEGA</small>
+            </div>
+            <div style="text-align:center;">
+                <div style="color:var(--alert); font-size:18px; font-weight:bold; animation: pulse 1s infinite;">DEFCON
+                    1: ACTIVE WARFARE</div>
+            </div>
+            <div id="clock" style="font-size: 20px;">00:00:00</div>
+        </header>
+
+        <aside class="panel">
+            <div class="panel-hdr">SYSTEM INFILTRATION</div>
+            <div class="data-row"><span>BANKING SWIFT:</span> <span class="val-red">FAIL</span></div>
+            <div class="data-row"><span>DEFENSE GRID:</span> <span class="val-red">BREACHED</span></div>
+            <div class="data-row"><span>SATELLITE-X:</span> <span class="val-red">OFFLINE</span></div>
+            <div class="data-row"><span>PENTAGON-OS:</span> <span class="val-red">OVERRIDE</span></div>
+
+            <div class="panel-hdr" style="margin-top:20px">ACTIVE SATELLITES</div>
+            <div id="sat-list" style="padding:10px; font-size:10px;"></div>
+            <button class="btn-action" onclick="triggerNuclear()">LAUNCH CYBER STRIKE</button>
+        </aside>
+
+        <main class="panel radar-box" id="map-frame">
+            <div class="world-map"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-ring" style="width: 250px; height: 250px;"></div>
+            <div class="radar-ring" style="width: 500px; height: 500px;"></div>
+            <div class="radar-ring" style="width: 750px; height: 750px;"></div>
+            <div id="ping-container"></div>
+        </main>
+
+        <aside class="panel">
+            <div class="panel-hdr">GLOBAL IMPACT FEED</div>
+            <div id="log-window"></div>
+            <div class="panel-hdr">DECRYPTION CORE</div>
+            <div id="hex-view" style="font-size:9px; height:150px; padding:10px; opacity:0.5;"></div>
+        </aside>
+
+        <footer class="panel" style="grid-column: span 3; background: rgba(0,0,0,0.9);">
+            <div class="panel-hdr">COMMAND TERMINAL</div>
+            <div style="padding:10px; display:flex;">
+                <span style="color:var(--neon); margin-right:10px;">root@omega:~$</span>
+                <input type="text" id="cmd"
+                    style="background:none; border:none; color:var(--neon); outline:none; width:100%; font-size:14px;">
+            </div>
+        </footer>
+    </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
